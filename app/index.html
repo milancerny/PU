@@ -3,291 +3,142 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>PUA's community</title>
-    <!-- Bootstrap Core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
-    <!-- Custom CSS -->
-    <link href="css/sb-admin.css" rel="stylesheet">
+    <!-- Viewport metatags -->
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="MobileOptimized" content="320" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
-    <!-- Morris Charts CSS -->
-    <link href="css/plugins/morris.css" rel="stylesheet">
+    <!-- iOS webapp metatags -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
-    <!-- Custom Fonts -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <!-- iOS webapp icons -->
+    <link rel="apple-touch-icon-precomposed" href="assets/images/ios/fickle-logo-72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/images/ios/fickle-logo-72.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/images/ios/fickle-logo-114.png" />
 
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- TODO: Add a favicon -->
+    <link rel="shortcut icon" href="assets/images/ico/fab.ico">
+
+    <title>Login screen</title>
+
+    <!--Page loading plugin Start -->
+    <link rel="stylesheet" href="assets/css/plugins/pace.css">
+    <script src="assets/js/pace.min.js"></script>
+    <!--Page loading plugin End   -->
+
+    <!-- Plugin Css Put Here -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/plugins/bootstrap-switch.min.css">
+    <link rel="stylesheet" href="assets/css/plugins/ladda-themeless.min.css">
+
+    <link href="assets/css/plugins/humane_themes/bigbox.css" rel="stylesheet">
+    <link href="assets/css/plugins/humane_themes/libnotify.css" rel="stylesheet">
+    <link href="assets/css/plugins/humane_themes/jackedup.css" rel="stylesheet">
+
+    <!-- Plugin Css End -->
+    <!-- Custom styles Style -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Custom styles Style End-->
+
+    <!-- Responsive Style For-->
+    <link href="assets/css/responsive.css" rel="stylesheet">
+    <!-- Responsive Style For-->
+
+    <!-- Custom styles for this template -->
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-    <!-- my custom CSS -->
-    <link href="css/custom.css" rel="stylesheet">
 </head>
-<body>
-    <div id="wrapper">
+<body class="login-screen">
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="login-box">
+                    <div class="login-content">
+                        <div class="login-user-icon">
+                            <i class="glyphicon glyphicon-user"></i>
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">PUA's community room</a>
+                        </div>
+                        <h3>Identify Yourself</h3>
+                    </div>
+
+                    <div class="login-form">
+                        <form id="form-login" action="#" class="form-horizontal ls_form">
+                            
+                            <div class="input-group ls-group-input">
+                                <input class="form-control" type="text" placeholder="Email">
+                                <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            </div>
+
+
+                            <div class="input-group ls-group-input">
+
+                                <input type="password" placeholder="Password" name="password"
+                                       class="form-control" value="">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                            </div>
+
+                            <div class="remember-me">
+                                <input class="switchCheckBox" type="checkbox" checked data-size="mini"
+                                       data-on-text="<i class='fa fa-check'><i>"
+                                       data-off-text="<i class='fa fa-times'><i>">
+                                <span>Remember me</span>
+                            </div>
+                            <div class="input-group ls-group-input login-btn-box">
+                                <button class="btn ls-dark-btn ladda-button col-md-12 col-sm-12 col-xs-12" data-style="slide-down">
+                                    <span>Enter</span>
+                                </button>
+
+                                <a class="forgot-password" href="javascript:void(0)">Forgot password</a>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="forgot-pass-box">
+                        <form action="#" class="form-horizontal ls_form">
+                            <div class="input-group ls-group-input">
+                                <input class="form-control" type="text" placeholder="someone@mail.com">
+                                <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                            </div>
+                            <div class="input-group ls-group-input login-btn-box">
+                                <button class="btn ls-dark-btn col-md-12 col-sm-12 col-xs-12">
+                                    <i class="fa fa-rocket"></i> Send
+                                </button>
+
+                                <a class="login-view" href="javascript:void(0)">Login</a> & <a class="" href="registration.html">Registration</a>
+
+                            </div>
+                        </form>
+                    </div>
+
+                </div>
             </div>
-            <!-- Top Menu Items -->
-            <ul class="nav navbar-right top-nav">
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> <b class="caret"></b></a>
-                    <ul class="dropdown-menu message-dropdown">
-                        <li class="message-preview">
-                            <a href="#">
-                                <div class="media">
-                                    <span class="pull-left">
-                                        <img class="media-object" src="http://placehold.it/50x50" alt="">
-                                    </span>
-                                    <div class="media-body">
-                                        <h5 class="media-heading"><strong>Author Name</strong>
-                                        </h5>
-                                        <p class="small text-muted"><i class="fa fa-clock-o"></i> Date present</p>
-                                        <p>Header article</p>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> Milan Černý <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-user"></i> Profile</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#"><i class="fa fa-fw fa-power-off"></i> Log Out</a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-            <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav side-nav">
-                    <li class="active">
-                        <a href="index.html"><i class="fa fa-fw fa-home"></i> Home</a>
-                    </li>
-                    <li>
-                        <a href="new-article.html"><i class="fa fa-fw fa-pencil"></i> Add new article</a>
-                    </li>
-                    <li>
-                        <a href="events.html"><i class="fa fa-fw fa-calendar-o"></i> Add events</a>
-                    </li>
-                    <li>
-                        <a href="overview.html"><i class="fa fa-fw fa-edit"></i> My articles</a>
-                    </li>
-                    <li>
-                        <a href="peoples.html"><i class="fa fa-fw fa-user"></i> Peoples</a>
-                    </li>
-                    <!--<li>
-                        <a href="bootstrap-grid.html"><i class="fa fa-fw fa-wrench"></i> Bootstrap Grid</a>
-                    </li>
-                    <li>
-                        <a href="javascript:;" data-toggle="collapse" data-target="#demo"><i class="fa fa-fw fa-arrows-v"></i> Dropdown <i class="fa fa-fw fa-caret-down"></i></a>
-                        <ul id="demo" class="collapse">
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
-                            <li>
-                                <a href="#">Dropdown Item</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="blank-page.html"><i class="fa fa-fw fa-file"></i> Blank Page</a>
-                    </li>
-                    <li>
-                        <a href="index-rtl.html"><i class="fa fa-fw fa-dashboard"></i> RTL Dashboard</a>
-                    </li> -->
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </nav>
-
-        <div id="page-wrapper">
-            <div class="container-fluid">
-                
-                <!-- navigation bar -->
-                <div class="row">
-                    <div class="col-lg-4 text-center">
-                        <button type="button" class="btn btn-lg btn-primary btn-primary-width">
-                            Articles
-                        </button>
-                    </div>
-
-                    <div class="col-lg-4 text-center">
-                        <button type="button" class="btn btn-lg btn-primary btn-primary-width">
-                            Events
-                        </button>
-                    </div>
-
-                    <div class="col-lg-4 text-center">
-                        <button type="button" class="btn btn-lg btn-primary btn-primary-width">
-                            Myself
-                        </button>
-                    </div>
-                </div>
-                <!-- /.row -->
-                <!-- navigation bar END -->
-
-                <br>
-                <!-- timeline -->
-                <div class="row">
-                    <div class="col-lg-4 text-left">
-                        <div class="panel">
-                            <img class="img-thumbnail" src="http://placehold.it/400x400" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-8 text-center">
-                        <div class="panel panel-height">
-                            <div class="article-style">
-                                <div class="panel-body panel-body-text-left">
-                                    <div class="page-header page-header-article">
-                                        <h2 class="article-head">Header article</h2>
-                                    </div>
-                                    <div class="article">
-                                        Lollipop bear claw sweet sweet roll pastry. Cotton candy biscuit jelly beans jelly-o gummi bears pastry. Tootsie roll oat cake pudding sweet roll pudding wafer bonbon cotton candy. Chupa chups brownie gummi bears halvah liquorice biscuit. Muffin oat cake liquorice tart bonbon carrot cake. Marshmallow chupa chups icing carrot cake danish. Bear claw marshmallow caramels jelly beans cake toffee donut sesame snaps bear claw. Donut pudding sugar plum cupcake croissant dragée gingerbread candy canes. Gummies tootsie roll chupa chups. Donut jelly sweet halvah croissant dragée bonbon chocolate powder. Caramels liquorice toffee. Cake gummi bears bear claw sweet roll gummies candy soufflé pastry bonbon. Croissant wafer jelly beans caramels.
-                                        Sesame snaps dessert danish oat cake wafer macaroon icing powder soufflé. Gummi bears tootsie roll donut sugar plum fruitcake macaroon. Tootsie roll chocolate bar wafer wafer dragée. Powder liquorice sweet chocolate cake icing. Apple pie jelly jelly beans pudding. Toffee carrot cake sweet roll liquorice gummi bears carrot cake tiramisu. Wafer tart dragée topping dragée wafer tiramisu jelly. Macaroon muffin chocolate bar liquorice pudding jelly ice cream biscuit. Pudding powder cotton candy jelly beans sugar plum topping sugar plum liquorice. Dragée lollipop donut tootsie roll dessert icing jelly-o icing candy canes. Cupcake marshmallow lemon drops cake muffin donut dessert wafer. Soufflé ice cream soufflé jujubes tootsie roll icing bonbon cheesecake.
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-primary btn-lg btn-primary-left" role="button">Read more &raquo;</a>
-                                <div class="date-presnet">
-                                	2015-04-16
-                                </div>
-                                <div class="like">
-                                    <i class="fa fa-fw fa-hand-o-right"></i>Like 100 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
-
-                <div class="row">
-                    <div class="col-lg-4 text-left">
-                        <div class="panel">
-                            <img class="img-thumbnail" src="http://placehold.it/400x400" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-8 text-center">
-                        <div class="panel panel-height">
-                            <div class="article-style">
-                                <div class="panel-body panel-body-text-left">
-                                    <div class="page-header page-header-article">
-                                        <h2 class="article-head">Header article</h2>
-                                    </div>
-                                    <div class="article">
-                                        Lollipop bear claw sweet sweet roll pastry. Cotton candy biscuit jelly beans jelly-o gummi bears pastry. Tootsie roll oat cake pudding sweet roll pudding wafer bonbon cotton candy. Chupa chups brownie gummi bears halvah liquorice biscuit. Muffin oat cake liquorice tart bonbon carrot cake. Marshmallow chupa chups icing carrot cake danish. Bear claw marshmallow caramels jelly beans cake toffee donut sesame snaps bear claw. Donut pudding sugar plum cupcake croissant dragée gingerbread candy canes. Gummies tootsie roll chupa chups. Donut jelly sweet halvah croissant dragée bonbon chocolate powder. Caramels liquorice toffee. Cake gummi bears bear claw sweet roll gummies candy soufflé pastry bonbon. Croissant wafer jelly beans caramels.
-                                        Sesame snaps dessert danish oat cake wafer macaroon icing powder soufflé. Gummi bears tootsie roll donut sugar plum fruitcake macaroon. Tootsie roll chocolate bar wafer wafer dragée. Powder liquorice sweet chocolate cake icing. Apple pie jelly jelly beans pudding. Toffee carrot cake sweet roll liquorice gummi bears carrot cake tiramisu. Wafer tart dragée topping dragée wafer tiramisu jelly. Macaroon muffin chocolate bar liquorice pudding jelly ice cream biscuit. Pudding powder cotton candy jelly beans sugar plum topping sugar plum liquorice. Dragée lollipop donut tootsie roll dessert icing jelly-o icing candy canes. Cupcake marshmallow lemon drops cake muffin donut dessert wafer. Soufflé ice cream soufflé jujubes tootsie roll icing bonbon cheesecake.
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-primary btn-lg btn-primary-left" role="button">Read more &raquo;</a>
-                                <div class="like">
-                                    <i class="fa fa-fw fa-hand-o-right"></i>Like 100 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
-
-                <div class="row">
-                    <div class="col-lg-4 text-left">
-                        <div class="panel">
-                            <img class="img-thumbnail" src="http://placehold.it/400x400" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-8 text-center">
-                        <div class="panel panel-height">
-                            <div class="article-style">
-                                <div class="panel-body panel-body-text-left">
-                                    <div class="page-header page-header-article">
-                                        <h2 class="article-head">Header article</h2>
-                                    </div>
-                                    <div class="article">
-                                        Lollipop bear claw sweet sweet roll pastry. Cotton candy biscuit jelly beans jelly-o gummi bears pastry. Tootsie roll oat cake pudding sweet roll pudding wafer bonbon cotton candy. Chupa chups brownie gummi bears halvah liquorice biscuit. Muffin oat cake liquorice tart bonbon carrot cake. Marshmallow chupa chups icing carrot cake danish. Bear claw marshmallow caramels jelly beans cake toffee donut sesame snaps bear claw. Donut pudding sugar plum cupcake croissant dragée gingerbread candy canes. Gummies tootsie roll chupa chups. Donut jelly sweet halvah croissant dragée bonbon chocolate powder. Caramels liquorice toffee. Cake gummi bears bear claw sweet roll gummies candy soufflé pastry bonbon. Croissant wafer jelly beans caramels.
-                                        Sesame snaps dessert danish oat cake wafer macaroon icing powder soufflé. Gummi bears tootsie roll donut sugar plum fruitcake macaroon. Tootsie roll chocolate bar wafer wafer dragée. Powder liquorice sweet chocolate cake icing. Apple pie jelly jelly beans pudding. Toffee carrot cake sweet roll liquorice gummi bears carrot cake tiramisu. Wafer tart dragée topping dragée wafer tiramisu jelly. Macaroon muffin chocolate bar liquorice pudding jelly ice cream biscuit. Pudding powder cotton candy jelly beans sugar plum topping sugar plum liquorice. Dragée lollipop donut tootsie roll dessert icing jelly-o icing candy canes. Cupcake marshmallow lemon drops cake muffin donut dessert wafer. Soufflé ice cream soufflé jujubes tootsie roll icing bonbon cheesecake.
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-primary btn-lg btn-primary-left" role="button">Read more &raquo;</a>
-                                <div class="like">
-                                    <i class="fa fa-fw fa-hand-o-right"></i>Like 100 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
-
-                <div class="row">
-                    <div class="col-lg-4 text-left">
-                        <div class="panel">
-                            <img class="img-thumbnail" src="http://placehold.it/400x400" alt="">
-                        </div>
-                    </div>
-
-                    <div class="col-lg-8 text-center">
-                        <div class="panel panel-height">
-                            <div class="article-style">
-                                <div class="panel-body panel-body-text-left">
-                                    <div class="page-header page-header-article">
-                                        <h2 class="article-head">Header article</h2>
-                                    </div>
-                                    <div class="article">
-                                        Lollipop bear claw sweet sweet roll pastry. Cotton candy biscuit jelly beans jelly-o gummi bears pastry. Tootsie roll oat cake pudding sweet roll pudding wafer bonbon cotton candy. Chupa chups brownie gummi bears halvah liquorice biscuit. Muffin oat cake liquorice tart bonbon carrot cake. Marshmallow chupa chups icing carrot cake danish. Bear claw marshmallow caramels jelly beans cake toffee donut sesame snaps bear claw. Donut pudding sugar plum cupcake croissant dragée gingerbread candy canes. Gummies tootsie roll chupa chups. Donut jelly sweet halvah croissant dragée bonbon chocolate powder. Caramels liquorice toffee. Cake gummi bears bear claw sweet roll gummies candy soufflé pastry bonbon. Croissant wafer jelly beans caramels.
-                                        Sesame snaps dessert danish oat cake wafer macaroon icing powder soufflé. Gummi bears tootsie roll donut sugar plum fruitcake macaroon. Tootsie roll chocolate bar wafer wafer dragée. Powder liquorice sweet chocolate cake icing. Apple pie jelly jelly beans pudding. Toffee carrot cake sweet roll liquorice gummi bears carrot cake tiramisu. Wafer tart dragée topping dragée wafer tiramisu jelly. Macaroon muffin chocolate bar liquorice pudding jelly ice cream biscuit. Pudding powder cotton candy jelly beans sugar plum topping sugar plum liquorice. Dragée lollipop donut tootsie roll dessert icing jelly-o icing candy canes. Cupcake marshmallow lemon drops cake muffin donut dessert wafer. Soufflé ice cream soufflé jujubes tootsie roll icing bonbon cheesecake.
-                                    </div>
-                                </div>
-                                <a href="#" class="btn btn-primary btn-lg btn-primary-left" role="button">Read more &raquo;</a>
-                                <div class="like">
-                                    <i class="fa fa-fw fa-hand-o-right"></i>Like 100 
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- /.row -->
-
-            </div>
-            <!-- /.container-fluid -->
-
         </div>
-        <!-- /#page-wrapper -->
-
     </div>
-    <!-- /#wrapper -->
+    <p class="copy-right big-screen hidden-xs hidden-sm">
+        <span>&#169;</span> PUA's community <span class="footer-year">2015</span>
+    </p>
+</section>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
-
-    <!-- Morris Charts JavaScript -->
-    <script src="js/plugins/morris/raphael.min.js"></script>
-    <script src="js/plugins/morris/morris.min.js"></script>
-    <script src="js/plugins/morris/morris-data.js"></script>
 </body>
+<script src="assets/js/lib/jquery-2.1.1.min.js"></script>
+<script src="assets/js/lib/jquery.easing.js"></script>
+<script src="assets/js/bootstrap-switch.min.js"></script>
+<!--Script for notification start-->
+<script src="assets/js/loader/spin.js"></script>
+<script src="assets/js/loader/ladda.js"></script>
+<script src="assets/js/humane.min.js"></script>
+<!--Script for notification end-->
+
+<script src="assets/js/pages/login.js"></script>
 </html>
