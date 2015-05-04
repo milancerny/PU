@@ -1,0 +1,106 @@
+.panel-height {
+	height: 394px;
+}
+
+.page-header {
+	border-bottom: 0px solid #eee;
+}
+
+.panel-body-text-left {
+	text-align: left;
+}
+
+.page-header-article {
+	padding-bottom: 0px;
+	margin: 0 0 0;
+}
+
+h2.article-head {
+	margin-top: 0px;
+}
+
+.article-style {
+	max-height: 320px;
+	overflow: hidden;
+	margin-bottom: 18px;
+}
+
+.article {
+	height: 200px;
+  	overflow: hidden;
+}
+
+.btn-primary-left {
+	float: left;
+	margin-left: 15px;
+}
+
+.like {
+	float: right;
+	position: absolute;
+	bottom: 34px;
+	right: 36px;
+	opacity: 0.8;
+	color: #337ab7;
+	font-size: 20px;
+}
+
+.date-presnet {
+	float: left;
+	margin-right: 15px;
+	position: absolute;
+	bottom: 34px;
+	left: 36px;
+	opacity: 0.8;
+	color: #337ab7;
+	font-size: 20px;
+}
+
+.btn-primary-width {
+	width: 100%;
+}
+
+input[type=radio].type {
+	position:absolute; 
+	z-index:-1000; 
+	left:-1000px; 
+	overflow: hidden; 
+	clip: rect(0 0 0 0); 
+	height:1px; 
+	width:1px; 
+	margin:-1px; 
+	padding:0; 
+	border:0;
+}
+
+input[type=radio].type + label.css-label {
+	padding-left:55px;
+	height:50px; 
+	display:inline-block;
+	line-height:50px;
+	background-repeat:no-repeat;
+	background-position: 0 0;
+	font-size:50px;
+	vertical-align:middle;
+	cursor:pointer;
+}
+
+input[type=radio].type:checked + label.css-label {
+	background-position: 0 -50px;
+}
+
+label.css-label {
+	background: url('../img/css-checkbox.png');
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.alert-top {
+	position: relative;
+	top: -29px;
+	margin-bottom: 0px;
+}
