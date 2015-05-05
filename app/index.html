@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="PUApp">
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,15 +7,20 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Login screen</title>
-
+    <title>PUA's community</title>
     <!-- Bootstrap Core CSS -->
     <link href="components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- MetisMenu CSS -->
-    <!-- <link href="components/metisMenu/dist/metisMenu.min.css" rel="stylesheet"> -->
-
     <!-- Custom CSS -->
+    <link href="css/sb-admin.css" rel="stylesheet">
+
+    <!-- Morris Charts CSS -->
+    <link href="css/plugins/morris.css" rel="stylesheet">
+	
+	<!-- MetisMenu CSS -->
+    <link href="components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">	
+	
+	<!-- Custom CSS -->
     <link href="components/bootstrap/dist/css/sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
@@ -27,50 +32,31 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- my custom CSS -->
+    <link href="css/custom.css" rel="stylesheet">
+	
+	<!-- sourcing angular -->
+	<script src="components/angular/angular.js"></script>
+  	<script src="components/angular-route/angular-route.js"></script>
+	<script src="login/controllers/mainController.js"></script>
+  	<script src="app.js"></script>	
 </head>
 <body>
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-md-offset-4">
-                    <div class="login-panel panel panel-default">
-                        <div class="panel-heading">
-                            <h3 class="panel-title">Please Sign In</h3>
-                        </div>
-                        <div class="panel-body">
-                            <form role="form">
-                                <fieldset>
-                                    <div class="form-group">
-                                        <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
-                                    </div>
-                                    <div class="form-group">
-                                        <input class="form-control" placeholder="Password" name="password" type="password" value="">
-                                    </div>
-                                    <div class="checkbox">
-                                        <label>
-                                            <input name="remember" type="checkbox" value="Remember Me">Remember Me
-                                        </label>
-                                    </div>
-                                    
-                                    <button type="button" class="btn btn-lg btn-primary btn-block">Login</button>
-                                </fieldset>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-         <p class="copy-right big-screen hidden-xs hidden-sm">
-            <span>&#169;</span> PUA's community 2015
-        </p>
-    </section>
+	<section ng-view></section>
+
     <!-- jQuery -->
-    <script src="components/jquery/dist/jquery.min.js"></script>
+   	<script src="components/jquery/dist/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
     <script src="components/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!-- Metis Menu Plugin JavaScript -->
+    <!-- Morris Charts JavaScript -->
+    <script src="js/plugins/morris/raphael.min.js"></script>
+    <script src="js/plugins/morris/morris.min.js"></script>
+    <script src="js/plugins/morris/morris-data.js"></script>
+
+	<!-- Metis Menu Plugin JavaScript -->
     <script src="components/metisMenu/dist/metisMenu.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
