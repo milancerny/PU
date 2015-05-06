@@ -37,3 +37,4 @@ PUApp.config(['$routeProvider',
 
 //PUApp.controller('loginMainController', loginMainController);
 PUApp.controller('noopController', ['$scope', function ($scope) {}]);
+PUApp.directive('mapEvent', mapEvent);
